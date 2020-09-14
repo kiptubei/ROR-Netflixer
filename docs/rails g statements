@@ -3,16 +3,24 @@ rails g model User username:string{15}:uniq fullname:string photo:string
 
 validates :username, length: { minimum: 3, maximum: 15 }, uniqueness: { case_sensitive: false }
 
-validates :username, :fullname, presence: true 
+validates :username, :fullname, presence: true
 
 validates :photo, length: { maximum: 250 }, allow_blank: true
+
+rails g migration AddCoverImageToUsers 'CoverImage:string'
 
 
 rails g model Opinion authorid:string text:string
 
-validates :authorid, :text, presence: true 
+validates :authorid, :text, presence: true
 
+rails g migration ChangeAuthorIdType
+change_column :opinions, :authorid, 'numeric USING CAST(authorid AS numeric)'
+
+rails g migration AddForeignKeyToOpinions2
 add_foreign_key :opinions, :users, column: :authorid
+
+
 
 
 
@@ -21,6 +29,6 @@ class User < ApplicationRecord       class Opinion < ApplicationRecord
 end                                  end
 
 
-rails g model friendship user:references fan:references 
+rails g model friendship user:references fan:references
 
 add_foreign_key :fans, :users, column: :fan_id
