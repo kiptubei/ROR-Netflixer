@@ -1,0 +1,64 @@
+<head>
+  <%= stylesheet_link_tag 'followings' %>
+  <%= stylesheet_link_tag 'opinions' %>
+<head>
+<div class="main-content">
+  <%= render 'side_nav' %>
+  <main>
+  <%= render 'navigation_bar' %>
+  <div class="main-body">
+    <div class="tweets">
+        <p class="tweets-heading">REVIEWS</p>
+        <div class="tweet-form">
+            <p>LEAVE A REVIEW IN FORMAT LIKE @name_of_movie ...</p>
+            <%= render 'form'%>
+            <%= render 'errors'%>
+        </div>
+        <div class="tweet-body">
+            <p class="tweet-body-header text-primary">
+                <%= pluralize(@opinions.count, 'NEW REVIEW' )%>
+            </p>
+            <% @opinions.each do |opinion| %>
+            <div class="tweet-avatar">
+                <div class="picture">
+                <%= author_opinion(opinion) %>
+                </div>
+            </div>
+            <div class="tweet-content">
+                <h4>
+                  <%= opinion.Author.fullname.upcase %>
+                </h4>
+                <p>
+                  <%= sanitize opinion.text %>
+                </p>
+                <span class="like">
+                  <%= like_opinion(opinion) %>
+                </span>
+            </div>
+            <div class="clear"></div>
+            <% end %>
+        </div>
+    </div>
+    <aside class="who-follow">
+        <div class="follow-header">
+            <p>CRITICS TO FOLLOW</p>
+        </div>
+        <div class="find-friends">
+            <% @users.each do |user| %>
+            <div class="who-follow-profile">
+                <div class="picture">
+                    <%= link_to user_path(user), class: 'user' do %>
+                      <%= render_user(user) %>
+                    <h6>
+                      <%= user.Fullname %>
+                    </h6>
+                    <% end %>
+                </div>
+            </div>
+            <% end %>
+        </div>
+
+    </aside>
+  </div>
+  </main>
+</div>
