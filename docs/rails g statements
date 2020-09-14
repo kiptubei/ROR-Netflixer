@@ -15,7 +15,7 @@ rails g model Opinion authorid:string text:string
 validates :authorid, :text, presence: true
 
 rails g migration ChangeAuthorIdType
-change_column :opinions, :authorid, 'numeric USING CAST(authorid AS numeric)'
+change_column :opinions, :authorid, 'bigint USING CAST(authorid AS bigint)'
 
 rails g migration AddForeignKeyToOpinions2
 add_foreign_key :opinions, :users, column: :authorid
