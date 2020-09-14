@@ -29,6 +29,10 @@ class User < ApplicationRecord       class Opinion < ApplicationRecord
 end                                  end
 
 
-rails g model friendship user:references fan:references
+rails g model Following user:references fan:references
 
 add_foreign_key :fans, :users, column: :fan_id
+
+rails g model Following
+
+rails g controller Followings
