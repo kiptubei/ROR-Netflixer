@@ -1,0 +1,26 @@
+<head>
+<%= stylesheet_link_tag 'users' %>
+</head>
+
+<div class="mt-5 text-center">
+    <div class="twitter-logo">
+        <i class="fas fa-guitar fa-3x shadow p-3 mb-2"></i>
+    </div>
+    <h3 class="mb-5">Sign Up  For Music Tweets</h3>
+    <%=render 'errors' %>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card card-signin flex-row my-5">
+                <div class="card-img-left d-none d-md-flex">
+                    <!-- Background image for card set in CSS! -->
+                </div>
+                <div class="card-body bg">
+                    <h5 class="card-title text-center">Register</h5>
+                    <%=render 'form' %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
