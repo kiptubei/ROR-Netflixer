@@ -17,10 +17,10 @@
                    Background image for card set in CSS!
                 </div> -->
                 <div class="card-body">
-                    <h5 class="card-title text-center">Sign In</h5>
+                    <h5 class="card-title text-center">Enter Username to Sign In</h5>
                     <%= form_for (:session), :url => login_path, :html => {class: "form-signin"} do |f| %>
                     <div class="form-label-group">
-                        <%= f.text_field :Username, class: "form-control", placeholder: "Enter Username" %>
+                        <%= f.text_field :username, class: "form-control", placeholder: "Enter Username" %>
                     </div>
                     <div class="form-label-group">
                         <%= f.submit "Log In",  class: "btn btn-lg btn-primary btn-block text-uppercase"%>

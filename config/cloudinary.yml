@@ -1,19 +1,19 @@
 ---
 development:
   cloud_name: dpjcv6qnt
-  api_key: "444115574563926"
+  api_key: '444115574563926'
   api_secret: SBWTcTXIqyxWLki-33ABNH-UgVo
   enhance_image_tag: true
   static_file_support: false
 production:
   cloud_name: dpjcv6qnt
-  api_key: "444115574563926"
+  api_key: '444115574563926'
   api_secret: SBWTcTXIqyxWLki-33ABNH-UgVo
   enhance_image_tag: true
   static_file_support: true
 test:
   cloud_name: dpjcv6qnt
-  api_key: "444115574563926"
+  api_key: '444115574563926'
   api_secret: SBWTcTXIqyxWLki-33ABNH-UgVo
   enhance_image_tag: true
   static_file_support: false

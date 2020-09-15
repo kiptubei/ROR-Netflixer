@@ -1,15 +1,15 @@
 module UsersHelper
   def render_user(user)
-    if user[:Photo].nil?
-      image_tag(opinion.Author.photo.thumb.url)
+    if user[:photo].nil?
+      # image_tag(@opinion.author.photo.thumb.url)
       gravatar_for(user, size: 50)
     else
-      image_tag(user.photo.thumb.url, class: 'photo')
+      # image_tag(user.photo.thumb.url, class: 'photo')
     end
   end
 
   def user_img(_user)
-    if @user[:Photo].nil?
+    if @user[:photo].nil?
       image_tag(@opinion.Author.photo.thumb.url)
       gravatar_for(@user, size: 100)
     else
@@ -18,10 +18,11 @@ module UsersHelper
   end
 
   def same_user(_user)
-    if current_user[:Photo].nil?
+    if current_user[:photo].nil?
       gravatar_for(current_user, size: 50)
     else
-      image_tag(current_user.photo.thumb.url)
+      # image_tag(current_user.photo.thumb.url)
+      # image_tag(Cloudinary::Uploader.upload(current_user.photo.thumb.url))
     end
   end
 
