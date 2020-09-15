@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
   get '/follow/:followed_id', to: 'followings#create', as: :follow
   delete '/:followed_id', to: 'followings#destroy', as: :unfollow
+
+  post '/create_opinion', to: 'opinions#create', as: :new_opinion
+  get '/', to: 'opinions#index', as: :root
 end

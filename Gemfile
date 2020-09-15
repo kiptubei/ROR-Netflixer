@@ -28,6 +28,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'figaro'
+gem 'gravtastic'
+
 gem 'popper_js', '~> 1.14.5'
 gem 'rails-controller-testing'
 
