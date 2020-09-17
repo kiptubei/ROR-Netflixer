@@ -346,7 +346,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   rubocop
-  sassc-rails
+  sassc-rails (>= 2.0.0)
   selenium-webdriver
   shoulda-matchers (~> 4.3)
   spring
