@@ -17,7 +17,7 @@ group :production do
   gem 'pg'
 end
 # Use SCSS for stylesheets
-gem 'sassc-rails', '>= 2.0.0'
+gem 'sass-rails', '>= 6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
