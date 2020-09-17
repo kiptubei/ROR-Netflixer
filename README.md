@@ -65,7 +65,8 @@ To get a local copy up and running follow these steps:
 
 ### Prerequisites
 
-- Ruby: 2.6.5
+Ruby: 2.7.1
+
 - Rails: 5.2.4
 - Postgres: >=9.5
 - Git
