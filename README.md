@@ -49,15 +49,15 @@ This project is a twitter like social media site that allows fans of the movie s
 
 ### Login
 
-![screenshot](images/netflixer_login.PNG)
+![screenshot](images/netflixer_login.png)
 
 ### Sign UP
 
-![screenshot](images/netflixer_signup.PNG)
+![screenshot](images/netflixer_signup.png)
 
 ### Userpage
 
-![screenshot](images/netflixer_homepage.PNG)
+![screenshot](images/netflixer_homepage.png)
 
 ## Getting Started
 
