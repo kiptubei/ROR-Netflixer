@@ -13,11 +13,11 @@
      <%= hero(@user) %>
       </div>
       <div class="user-body">
-        <p class="user-body-header">ALL TWEETS</p>
+        <p class="user-body-header">ALL REVIEWS</p>
         <% @opinions.each do |opinion| %>
           <div class="user-avatar">
             <div class="picture">
-            <%= author_opinion(opinion) %>          
+            <%= author_opinion(opinion) %>
             </div>
           </div>
           <div class="user-content">
@@ -43,13 +43,13 @@
         <div class="profile-details text-center">
           <h5><%= @user.Fullname.upcase %></h5>
           <h6>@<%= @user.Username %></h6>
-        </div> 
+        </div>
       </div>
       <div class="user-stat">
         <div class="opinion-stat">
           <div class="stats-1">
             <p class="stat-no"><%= @opinions.size %></p>
-            <p class="stat-name">Tweets</p>
+            <p class="stat-name">Reviews</p>
           </div>
         </div>
         <div class="following-stat">
