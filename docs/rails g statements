@@ -37,4 +37,6 @@ rails g model Following
 
 rails g controller Followings
 
-rails g migration DropTableLikes
+rails g migration ChangeTableLikes
+
+drop_table :Likes, if_exists: true
