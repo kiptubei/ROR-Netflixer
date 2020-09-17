@@ -9,7 +9,7 @@ RSpec.feature 'Opinion', type: :feature do
 
   it 'Should create an opinion' do
     visit login_path
-    fill_in "session[Username]", with: "django"
+    fill_in 'session[Username]', with: 'django'
     click_button 'Log In'
     fill_in 'opinion[Text]', with: 'The_usual_suspects is the one!'
     click_button 'Speak!'

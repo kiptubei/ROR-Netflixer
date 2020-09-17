@@ -1,19 +1,21 @@
 # ROR-Netflixer
-This project is a twiiter like social media site that allows fans of the movie streaming site 'Netflix', to meet and leave their opinions on various shows airing on the platform
+
+This project is a twitter like social media site that allows fans of the movie streaming site 'Netflix', to meet and leave their opinions on various shows airing on the platform
 
 # Project Development Paths
-* Setup github workflows,RSpec,linters
 
-* Setup postgresql as default database
+- Setup github workflows,RSpec,linters
 
-* UI development via bootstrap
+- Setup postgresql as default database
 
-* Database schema and Model creation
+- UI development via bootstrap
 
-* Sessions to manage logins
+- Database schema and Model creation
 
-* Controllers for actions
+- Sessions to manage logins
 
-* Tests
+- Controllers for actions
 
-* Deployment instructions
+- Tests
+
+- Deployment instructions
