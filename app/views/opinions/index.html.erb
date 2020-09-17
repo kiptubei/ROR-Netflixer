@@ -10,13 +10,13 @@
     <div class="tweets">
         <p class="tweets-heading">REVIEWS</p>
         <div class="tweet-form">
-            <p>LEAVE A REVIEW IN FORMAT LIKE @name_of_movie ...</p>
+            <p>WHAT DID YOU THINK? e.g start with ..@name-of-movie </p>
             <%= render 'form'%>
-            <%= render 'errors'%>
+            <%= render 'checks'%>
         </div>
         <div class="tweet-body">
             <p class="tweet-body-header text-primary">
-                <%= pluralize(@opinions.count, 'NEW REVIEW' )%>
+                <%= pluralize(@opinions.count, 'REVIEWS' )%>
             </p>
             <% @opinions.each do |opinion| %>
             <div class="tweet-avatar">
@@ -26,10 +26,10 @@
             </div>
             <div class="tweet-content">
                 <h4>
-                  <%= opinion.Author.fullname.upcase %>
+                  <%= opinion.Author.Fullname.upcase %>
                 </h4>
                 <p>
-                  <%= sanitize opinion.text %>
+                  <%= sanitize opinion.Text %>
                 </p>
                 <span class="like">
                   <%= like_opinion(opinion) %>
@@ -41,7 +41,7 @@
     </div>
     <aside class="who-follow">
         <div class="follow-header">
-            <p>CRITICS TO FOLLOW</p>
+            <p>WHO TO FOLLOW</p>
         </div>
         <div class="find-friends">
             <% @users.each do |user| %>
@@ -50,7 +50,7 @@
                     <%= link_to user_path(user), class: 'user' do %>
                       <%= render_user(user) %>
                     <h6>
-                      <%= user.fullname %>
+                      <%= user.Fullname %>
                     </h6>
                     <% end %>
                 </div>

@@ -1,6 +1,6 @@
 module FollowingsHelper
   def render_follows(follower)
-    if current_user.followed.any? { |person| person.followedid == follower.follower.id }
+    if current_user.followed.any? { |person| person.followedId == follower.follower.id }
       link_to unfollow_path(follower.follower), method: :delete, class: 'follow-icons' do
         '<i class="fas fa-minus-circle "></i>'.html_safe
       end
@@ -12,7 +12,7 @@ module FollowingsHelper
   end
 
   def follow_img(follower)
-    image_tag(follower.follower.photo.thumb.url) unless follower.follower[:Photo].nil?
+    image_tag(follower.follower.Photo.thumb.url) unless follower.follower[:Photo].nil?
     gravatar_for(follower.follower, size: 50)
   end
 

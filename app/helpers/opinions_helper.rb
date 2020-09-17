@@ -5,5 +5,5 @@ module OpinionsHelper
     else
       image_tag(opinion.Author.Photo.thumb.url)
     end
-end
+  end
 end

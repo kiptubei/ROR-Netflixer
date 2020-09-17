@@ -8,6 +8,10 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
 
+//= require rails-ujs
+//= require activestorage
+//= require turbolinks
+
 import "bootstrap";
 import "../stylesheets/application";
 
