@@ -1,18 +1,18 @@
 <%= form_for (@user), :url => users_path, :html => {class: "form-signin"} do
   |f| %>
   <div class="form-group">
-    <%= f.text_field :username, class: "form-control", placeholder: "Enter
+    <%= f.text_field :Username, class: "form-control", placeholder: "Enter
     Username" %>
   </div>
   <div class="form-input">
-    <%= f.text_field :fullname, class: "form-control", placeholder: "Enter
+    <%= f.text_field :Fullname, class: "form-control", placeholder: "Enter
     Fullname" %>
   </div>
   <div class="form-label mt-2">
-    <%= f.label :photo %>
+    <%= f.label :Photo %>
   </div>
   <div class="form-label-group">
-    <%= f.file_field :photo, class: "form-control shadow" %>
+    <%= f.file_field :Photo, class: "form-control shadow" %>
   </div>
   <div class="form-label mt-2">
     <%= f.label :CoverImage%>
