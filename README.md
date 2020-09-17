@@ -28,22 +28,22 @@ This project is a twitter like social media site that allows fans of the movie s
 ## Future features
 
 1. Add upvote cunctionality for reviews
-2. Restrict users reviews such each review must containa an @ tag to indicate a movie
+2. Restrict users reviews such each review must contains an @ tag to indicate a movie
 3. List trending movies based on the @ tag and upvotes in side bar
 
 ## Built With
 
-- Ruby v2.7.1
+- Ruby v2.6.5
 - Ruby on Rails v5.2.4
 - Gems used for testing: Capybara, Rspec-Rails, Shoulda-matchers and FactoryBot
 
 ## video
 
-(https://www.loom.com/share/d492e192f11545d5b8d2061de9834554)
+(https://www.youtube.com/watch?v=gZbibLkELeM&feature=youtu.be)
 
 ## Live Demo
 
-[Heroku App Link](https://shrouded-river-43787.herokuapp.com/)
+[Heroku App Link](https://calm-brushlands-48211.herokuapp.com)
 
 ## screenshots
 
@@ -65,7 +65,7 @@ To get a local copy up and running follow these steps:
 
 ### Prerequisites
 
-Ruby: 2.7.1
+Ruby: 2.6.5
 
 - Rails: 5.2.4
 - Postgres: >=9.5
